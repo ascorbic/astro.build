@@ -89,8 +89,8 @@ devDependencies:
     specifier: ^0.5.6
     version: 0.5.10(prettier@3.3.2)(typescript@5.5.2)
   '@astrojs/netlify':
-    specifier: 0.0.0-netlify-nft-20240621164746
-    version: 0.0.0-netlify-nft-20240621164746(@opentelemetry/api@1.9.0)(astro@4.11.0)
+    specifier: 0.0.0-netlify-nft-20240627091118
+    version: 0.0.0-netlify-nft-20240627091118(@opentelemetry/api@1.9.0)(astro@4.11.0)
   '@astrojs/site-kit':
     specifier: github:withastro/site-kit
     version: github.com/withastro/site-kit/c53071893428a3069310ae7c79c4485342c364ed(astro@4.11.0)(eslint@8.57.0)(prettier@3.3.2)(tailwindcss@3.4.4)(typescript@5.5.2)
@@ -218,6 +218,10 @@ packages:
   /@astrojs/internal-helpers@0.4.0:
     resolution: {integrity: sha512-6B13lz5n6BrbTqCTwhXjJXuR1sqiX/H6rTxzlXx+lN1NnV4jgnq/KJldCQaUWJzPL5SiWahQyinxAbxQtwgPHA==}
 
+  /@astrojs/internal-helpers@0.4.1:
+    resolution: {integrity: sha512-bMf9jFihO8YP940uD70SI/RDzIhUHJAolWVcO1v5PUivxGKvfLZTLTVVxEYzGYyPsA3ivdLNqMnL5VgmQySa+g==}
+    dev: true
+
   /@astrojs/language-server@2.10.0(prettier@3.3.2)(typescript@5.5.2):
     resolution: {integrity: sha512-crHXpqYfA5qWioiuZnZFpTsNItgBlF1f0S9MzDYS7/pfCALkHNJ7K3w9U/j0uMKymsT4hC7BfMaX0DYlfdSzHg==}
     hasBin: true
@@ -301,11 +305,12 @@ packages:
       - supports-color
     dev: false
 
-  /@astrojs/netlify@0.0.0-netlify-nft-20240621164746(@opentelemetry/api@1.9.0)(astro@4.11.0):
-    resolution: {integrity: sha512-Jdi4czrLgQ0xNcYJvK1pgOQVDS8Dt7LinEDHutu8WQEnc0nj883MKPKZ3a+EgV0PMU990nqbNbO78dhVZanNUQ==}
+  /@astrojs/netlify@0.0.0-netlify-nft-20240627091118(@opentelemetry/api@1.9.0)(astro@4.11.0):
+    resolution: {integrity: sha512-L4lZRA99FmHGIx/syIyYa554/KsmnXJNG4lkdolfqJj/VIcgqIUTlHS2CPx4hGv0OLhD7VJGDqUPUN5jcwigpg==}
     peerDependencies:
       astro: ^4.2.0
     dependencies:
+      '@astrojs/internal-helpers': 0.4.1
       '@astrojs/underscore-redirects': 0.3.3
       '@netlify/functions': 2.8.0(@opentelemetry/api@1.9.0)
       '@vercel/nft': 0.27.2
